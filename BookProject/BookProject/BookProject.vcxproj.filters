@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{0cdb3ab6-859d-4a2a-8688-259019b5e6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FX">
+      <UniqueIdentifier>{38d19d74-866b-46f7-82f0-38b062db0502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Textures">
+      <UniqueIdentifier>{4446e835-ccc0-4103-8251-3bb70e1d0af1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AccidentalNoise">
+      <UniqueIdentifier>{6d66abc2-a7a7-4786-8895-dc4c02391549}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dApp.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dUtil.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GameTimer.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GeometryGenerator.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\LightHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\MathHelper.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\TextureMgr.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Waves.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\xnacollision.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Camera.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="TestD3DApp.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Int3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Effects.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Block.h">
+      <Filter>Header Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\LibNoise\include\noise\noiseutils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\cellulargen.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\hsv.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitautocorrect.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitbasisfunction.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitbias.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitblend.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitbrightcontrast.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitcache.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitcellular.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitclamp.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitcombiner.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitconstant.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitcos.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitextractrgbachannel.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitfloor.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitfractal.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitfunctiongradient.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitgain.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitgradient.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitinvert.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitpow.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitrgbadotproduct.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitrotatedomain.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitscaledomain.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitscaleoffset.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitselect.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitsin.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicitsphere.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicittiers.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\implicittranslatedomain.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\mapping.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\noise_gen.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\noise_lut.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbablend.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbablendops.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbacomposechannels.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbaconstant.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbahsvtorgba.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbaimplicitgrayscale.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbanormalize.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbargbatohsv.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbarotatecolor.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="accidentalnoise\src\rgbaselect.cpp">
+      <Filter>AccidentalNoise</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureArrayClass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericTerraNoise.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dApp.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dUtil.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dx11effect.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GameTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GeometryGenerator.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\LightHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\MathHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\TextureMgr.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Waves.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\xnacollision.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Camera.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Int3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="accidentalnoise\src\noiselut.h">
+      <Filter>AccidentalNoise</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureArrayClass.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericTerraNoise.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Textures\dirtsideortoporbottom.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\dokuDirt.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\dokuGrass.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\dokuGrassSide.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\dokuStone.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\grassside.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\grasstop.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\hiDefDirt.jpg">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\hiDefGrass.jpg">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\hiDefStone.jpg">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\lowqstone.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="Textures\sidegrass.png">
+      <Filter>Textures</Filter>
+    </None>
+    <None Include="FX\LightHelper.fx">
+      <Filter>FX</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="FX\color.fx">
+      <Filter>FX</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+</Project>

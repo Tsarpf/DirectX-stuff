@@ -1,0 +1,92 @@
+- Test whether vector or array implementation of keeping track of block type counts in chunks is faster,
+	now implemented with vectors.
+
+- Totally skipping chunks that are concealed by other chunks
+
+
+
+
+
+Build a list for every texture type in chunk
+	* in lists put all cubesides that have the texture
+	* draw all those cubesides in one drawcall.
+
+Build one mesh per chunk per texture
+ * Add all cubesides that have the same texture to the same mesh, so they can be drawn with one drawcall
+ * Make a list of lists, add a list for each new texture
+ * Use an array of TextureIdx's (enum) to keep track of which textures are present in the chunk
+ *penis
+
+List of pointers to chunks
+- When infinite map needs to update, all you have to do is update the pointers. The actual data doesn't have to move at all o/
+
+
+
+
+
+
+enum TextureType : char
+{
+    grassSide = 0,
+    grassTop,
+    grassBottom, //grassBottom is the same texture as dirt, how do I?
+    dirt,
+    stone,
+    TextureTypeNum
+};
+
+vector<Int3> textureTypes[TextureTypeNum];
+
+
+for(int x = 0; x < chunksize.x; x++)
+{
+    for(int y = 0; y < chunksize.y; y++)
+    {
+        for(int z = 0; z < chunksize.z; z++)
+        {
+            BlockType bt = btArray.getBlockType(x,y,z);
+            
+            if(bt==AIR) continue;
+            
+            getBlockSideVertexes(bt, Int3(x,y,z));
+        }
+    }
+}
+
+getBlockSideVertexes(BlockType bt, Int3 xyz)
+{
+    if(bt==grass)
+    {
+        //add sides to list
+        //add top to list
+        //add bottom to list
+    }
+    if(bt==stone)
+    {
+        //add all sides to list
+    }
+    
+    ...
+    
+}
+
+
+
+GenericSomethingEtc::addBlockDrawData(BlockType bt, Int3 xyz)
+{
+    //Xminus
+    if(blockTypeAtLocation(x-1, y, z) == AIR)
+    {
+        
+    }
+    //Xplus
+    //Yminus
+    //YPlus
+    //Zminus
+    //Zplus
+}
+
+
+
+//Map blocktype stuff to textures
+getTextureIdxForBlockType(BlockType bt, Side)

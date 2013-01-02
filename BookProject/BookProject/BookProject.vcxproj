@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{75A8727B-1D71-48AC-97F1-CF051109209A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>BookProject</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <ExecutablePath>$(DXSDK_DIR)\Utilities\bin\x86\;$(ExecutablePath)</ExecutablePath>
+    <IncludePath>accidentalnoise\include\;D:\CODE\C++\LibNoise\include;C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common;$(DXSDK_DIR)\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)\Samples\C++\Effects11\Debug;D:\CODE\C++\LibNoise\bin;C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common;$(DXSDK_DIR)\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>libnoise.lib;d3d11.lib;d3dx11d.lib;D3DCompiler.lib;Effects11.lib;dxerr.lib;dxgi.lib;dxguid.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\LibNoise\include\noise\noiseutils.cpp" />
+    <ClCompile Include="accidentalnoise\src\cellulargen.cpp" />
+    <ClCompile Include="accidentalnoise\src\hsv.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitautocorrect.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitbasisfunction.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitbias.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitblend.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitbrightcontrast.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitcache.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitcellular.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitclamp.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitcombiner.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitconstant.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitcos.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitextractrgbachannel.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitfloor.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitfractal.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitfunctiongradient.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitgain.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitgradient.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitinvert.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitpow.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitrgbadotproduct.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitrotatedomain.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitscaledomain.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitscaleoffset.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitselect.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitsin.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicitsphere.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicittiers.cpp" />
+    <ClCompile Include="accidentalnoise\src\implicittranslatedomain.cpp" />
+    <ClCompile Include="accidentalnoise\src\mapping.cpp" />
+    <ClCompile Include="accidentalnoise\src\noise_gen.cpp" />
+    <ClCompile Include="accidentalnoise\src\noise_lut.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbablend.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbablendops.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbacomposechannels.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbaconstant.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbahsvtorgba.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbaimplicitgrayscale.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbanormalize.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbargbatohsv.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbarotatecolor.cpp" />
+    <ClCompile Include="accidentalnoise\src\rgbaselect.cpp" />
+    <ClCompile Include="Block.h" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Camera.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dApp.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dUtil.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GameTimer.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GeometryGenerator.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\LightHelper.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\MathHelper.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\TextureMgr.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Waves.cpp" />
+    <ClCompile Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\xnacollision.cpp" />
+    <ClCompile Include="Effects.cpp" />
+    <ClCompile Include="Int3.cpp" />
+    <ClCompile Include="GenericTerraNoise.cpp" />
+    <ClCompile Include="TestD3DApp.cpp" />
+    <ClCompile Include="TextureArrayClass.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="accidentalnoise\src\noiselut.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Camera.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dApp.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dUtil.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\d3dx11effect.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GameTimer.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\GeometryGenerator.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\LightHelper.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\MathHelper.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\TextureMgr.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\Waves.h" />
+    <ClInclude Include="C:\Users\Tsarpf\Desktop\koodaus\introduction_to_dx11_etc\d3d11CodeSet1\Common\xnacollision.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="Globals.h" />
+    <ClInclude Include="Int3.h" />
+    <ClInclude Include="GenericTerraNoise.h" />
+    <ClInclude Include="TextureArrayClass.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="FX\color.fx">
+      <FileType>Document</FileType>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc /Fc /Od /Zi /T fx_5_0 /Fo "%(RelativeDir)\%(Filename).fxo" "%(FullPath)"</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">fxc compile for debug: %(FullPath)</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(RelativeDir)\%(Filename).fxo</Outputs>
+    </CustomBuild>
+    <None Include="FX\LightHelper.fx" />
+    <None Include="Textures\dirtsideortoporbottom.png" />
+    <None Include="Textures\dokuDirt.png" />
+    <None Include="Textures\dokuGrass.png" />
+    <None Include="Textures\dokuGrassSide.png" />
+    <None Include="Textures\dokuStone.png" />
+    <None Include="Textures\grassside.png" />
+    <None Include="Textures\grasstop.png" />
+    <None Include="Textures\hiDefDirt.jpg" />
+    <None Include="Textures\hiDefGrass.jpg" />
+    <None Include="Textures\hiDefStone.jpg" />
+    <None Include="Textures\lowqstone.png" />
+    <None Include="Textures\sidegrass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="TODO.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
