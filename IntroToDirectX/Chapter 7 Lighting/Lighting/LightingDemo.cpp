@@ -43,6 +43,9 @@ private:
 	void BuildWaveGeometryBuffers();
 	void BuildFX();
 	void BuildVertexLayout();
+	XMFLOAT3 LightingApp::MouseClickHitPoint(int screenX, int screenY);
+	XMFLOAT3 LightingApp::GetVectorAndXZPlaneIntersectionPoint(XMFLOAT3 startPos, XMVECTOR vector, int yPos);
+	XMVECTOR LightingApp::GetClickDirectionVector(int x, int y);
 
 private:
 	ID3D11Buffer* mLandVB;
@@ -77,6 +80,7 @@ private:
 
 	XMFLOAT4X4 mView;
 	XMFLOAT4X4 mProj;
+	XMFLOAT3 camPos;
 
 	UINT mLandIndexCount;
 
@@ -199,6 +203,7 @@ void LightingApp::UpdateScene(float dt)
 	float y = mRadius*cosf(mPhi);
 
 	mEyePosW = XMFLOAT3(x, y, z);
+	camPos = mEyePosW;
 
 	// Build the view matrix.
 	XMVECTOR pos    = XMVectorSet(x, y, z, 1.0f);
@@ -532,4 +537,46 @@ void LightingApp::BuildVertexLayout()
     mTech->GetPassByIndex(0)->GetDesc(&passDesc);
 	HR(md3dDevice->CreateInputLayout(vertexDesc, 2, passDesc.pIAInputSignature, 
 		passDesc.IAInputSignatureSize, &mInputLayout));
+}
+
+XMFLOAT3 LightingApp::MouseClickHitPoint(int screenX, int screenY)
+{
+    XMVECTOR clickVector = GetClickDirectionVector(screenX, screenY);
+    int planeYPos = -3;
+	return GetVectorAndXZPlaneIntersectionPoint(camPos, clickVector, planeYPos);
+}
+
+XMFLOAT3 LightingApp::GetVectorAndXZPlaneIntersectionPoint(XMFLOAT3 startPos, XMVECTOR vector, int yPos)
+{
+	XMFLOAT3 neatVector;
+	XMStoreFloat3(&neatVector, vector);
+
+	float x1 = neatVector.x;
+    float y1 = neatVector.y;
+    float z1 = neatVector.z;
+
+    float xPos = (x1 * yPos) / y1;
+    float zPos = (z1 * yPos) / y1;
+
+	xPos += startPos.x;
+    zPos += startPos.z;
+
+    return XMFLOAT3(xPos, yPos, zPos);
+}
+
+XMVECTOR LightingApp::GetClickDirectionVector(int x, int y)
+{
+	//D3DXVECTOR3 pScreenVector(x,y,0);
+	//D3DXVECTOR3* pWorldVector;
+
+	XMVECTOR screenspaceClickVector = XMVectorSet(x,y,0,0);
+
+	XMMATRIX projection = XMLoadFloat4x4(&mProj);
+	XMMATRIX view = XMLoadFloat4x4(&mView);
+
+    XMVECTOR determinantBugFixVector;
+
+	XMMATRIX world = XMMatrixInverse(&determinantBugFixVector, view);
+	return XMVector3Unproject(screenspaceClickVector, 0, 0,
+		mClientWidth, mClientHeight, 0, 1, projection, view, world);
 }
